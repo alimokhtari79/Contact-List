@@ -25,17 +25,15 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <main>
-        <Layout>
-          <HomePage
-            contacts={contacts}
-            addContact={addContact}
-            deleteContactHandler={deleteContactHandler}
-          />
-        </Layout>
-      </main>
-    </div>
+    <main className="App">
+      <Layout>
+        <HomePage
+          contacts={contacts}
+          addContact={addContact}
+          deleteContactHandler={deleteContactHandler}
+        />
+      </Layout>
+    </main>
   );
 }
 

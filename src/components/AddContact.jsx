@@ -12,11 +12,16 @@ const AddContact = ({ addContact }) => {
 
   const submitContactFormHandler = (e) => {
     e.preventDefault();
+    if (!newContact.name || !newContact.email) {
+      alert('Please enter fields :(');
+      return;
+    }
     addContact(newContact);
+    setNewContact({ name: '', email: '' });
   };
 
   return (
-    <div className="add-contact-container">
+    <section className="add-contact-container">
       <h3 className="add-contact-container__header">Add Contact</h3>
       <form onSubmit={submitContactFormHandler}>
         <div className="inputs-container">
@@ -25,6 +30,7 @@ const AddContact = ({ addContact }) => {
             type="text"
             onChange={changeFormHandler}
             name="name"
+            value={newContact.name}
             id="name"
             placeholder="Name"
           />
@@ -35,6 +41,7 @@ const AddContact = ({ addContact }) => {
             type="text"
             onChange={changeFormHandler}
             name="email"
+            value={newContact.email}
             id="email"
             placeholder="Email"
           />
@@ -43,7 +50,7 @@ const AddContact = ({ addContact }) => {
           Add
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

@@ -1,8 +1,12 @@
+.App {
+  min-height: 100vh;
+}
+
 .main-header {
   display: flex;
   justify-content: center;
   padding-block: 1rem;
-  border-bottom: 2px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
 }
 
 .main-header h1 {
