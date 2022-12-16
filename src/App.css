@@ -21,7 +21,7 @@
 }
 
 .add-contact-container {
-  width: 80%;
+  width: 90%;
   padding-block: 10px;
 }
 
@@ -71,7 +71,18 @@
 /* Contact */
 
 .contact-container {
-  width: 80%;
+  width: 90%;
+}
+
+@media (min-width: 35rem) {
+  .add-contact-container {
+    width: 80%;
+    /* padding-block: 10px; */
+  }
+
+  .contact-container {
+    width: 80%;
+  }
 }
 
 .contact-container .contact {
@@ -110,12 +121,20 @@
   font-weight: 500;
 }
 
-.delete-contact-btn {
+.delete-contact-btn,
+.edit-contact-btn {
   border: none;
   outline: none;
   background: transparent;
-  color: #9f1239;
   font-size: 1.5rem;
+}
+
+.delete-contact-btn {
+  color: #9f1239;
+}
+
+.edit-contact-btn {
+  color: #1e40af;
 }
 
 /* Contact */
@@ -143,9 +162,14 @@
 
 .contact-detail__desc {
   width: 100%;
-  margin-top: 1rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
+}
+
+.contact-detail__desc .contact-detail__name {
+  margin-bottom: 0.5rem;
 }
 
 .contact-detail__container .back-home {

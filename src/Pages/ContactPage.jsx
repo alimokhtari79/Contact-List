@@ -10,7 +10,7 @@ const ContactPage = ({ location }) => {
           <img src={contact.img} alt="avatar" />
         </figure>
         <div className="contact-detail__desc">
-          <p>{contact.name}</p>
+          <p className="contact-detail__name">{contact.name}</p>
           <p>{contact.email}</p>
         </div>
       </div>

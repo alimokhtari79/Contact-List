@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineDelete } from 'react-icons/ai';
+import { TbEdit } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
 const ContactList = ({ contacts, deleteContactHandler }) => {
@@ -36,6 +37,9 @@ const Contact = ({ contact, deleteContactHandler }) => {
         </div>
       </Link>
       <div>
+        <button className="edit-contact-btn">
+          <TbEdit />
+        </button>
         <button
           className="delete-contact-btn"
           onClick={() => deleteContactHandler(id)}
