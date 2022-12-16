@@ -23,7 +23,10 @@ const Contact = ({ contact, deleteContactHandler }) => {
   const { name, email, id, img } = contact;
   return (
     <div className="contact">
-      <Link to={`Contact/${id}`} className="contact-desc">
+      <Link
+        to={{ pathname: `Contact/${id}`, state: { contact } }}
+        className="contact-desc"
+      >
         <figure>
           <img src={img} alt="avatar" className="avatar-img" />
         </figure>
