@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const ContactPage = ({ location }) => {
   const { contact } = location.state;
-  console.log(contact);
+  // console.log(contact);
   return (
     <section className="contact-detail__container">
       <div className="contact-detail">

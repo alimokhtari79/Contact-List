@@ -37,9 +37,11 @@ const Contact = ({ contact, deleteContactHandler }) => {
         </div>
       </Link>
       <div>
-        <button className="edit-contact-btn">
-          <TbEdit />
-        </button>
+        <Link to={{ pathname: `Edit-contact/${id}`, state: { contact } }}>
+          <button className="edit-contact-btn">
+            <TbEdit />
+          </button>
+        </Link>
         <button
           className="delete-contact-btn"
           onClick={() => deleteContactHandler(id)}

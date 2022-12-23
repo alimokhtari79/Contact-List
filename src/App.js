@@ -5,6 +5,7 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import NotFoundPage from './Pages/NotFoundPage';
 import ContactPage from './Pages/ContactPage';
+import EditContactPage from './Pages/EditContactPage';
 
 function App() {
   const [contacts, setContacts] = useState([]);
@@ -31,6 +32,12 @@ function App() {
     ]);
   };
 
+  const editContact = (contact, id) => {
+    setContacts((prev) =>
+      prev.map((item) => (item.id === id ? contact : item))
+    );
+  };
+
   const deleteContactHandler = (id) => {
     const filteredContact = [...contacts].filter(
       (contact) => contact.id !== id
@@ -43,6 +50,13 @@ function App() {
       <Layout>
         <Switch>
           <Route path="/Contact/:id" component={ContactPage}></Route>
+          <Route
+            path="/Edit-contact/:id"
+            exact
+            render={(props) => (
+              <EditContactPage editContact={editContact} {...props} />
+            )}
+          ></Route>
           <Route
             path="/"
             exact

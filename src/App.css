@@ -23,6 +23,7 @@
 .add-contact-container {
   width: 90%;
   padding-block: 10px;
+  margin: auto;
 }
 
 .add-contact-container .add-contact-container__header {
