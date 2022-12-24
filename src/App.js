@@ -12,13 +12,13 @@ function App() {
 
   // Get Contacts from localStorage when CDM
   useEffect(() => {
-    const saveContacts = JSON.parse(localStorage['contacts']);
-    if (saveContacts) return setContacts(saveContacts);
+    const savedContacts = JSON.parse(localStorage.getItem('contacts'));
+    if (savedContacts) setContacts(savedContacts);
   }, []);
 
   // Set Contacts to localStorage on contacts changes
   useEffect(() => {
-    localStorage['contacts'] = JSON.stringify(contacts);
+    localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
   const addContact = (contact) => {
