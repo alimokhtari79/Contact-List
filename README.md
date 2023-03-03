@@ -3,7 +3,7 @@
 </p>
 
   <h1 align="center"> 
-      Transaction App - React.js
+      Contact List App - React.js
   </h1>
   
   ## ⚗️technologies
