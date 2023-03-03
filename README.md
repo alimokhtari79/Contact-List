@@ -16,7 +16,7 @@
 
 ## 🚀 Demo
 
-Visit on netlify : [Project Link](https://transactionapp-alimokhtari79.netlify.app)
+Visit on netlify : [Project Link](https://contact-manager-alimokhtari79.netlify.app/)
 
 
 ## 🛠️ Installation Steps
@@ -24,13 +24,13 @@ Visit on netlify : [Project Link](https://transactionapp-alimokhtari79.netlify.a
 1. Clone the repository
 
 ```bash
-git clone https://github.com/alimokhtari79/spa-transactionapp.git
+git clone https://github.com/alimokhtari79/Contact-List-react.git
 ```
 
 2. Change the working directory
 
 ```bash
-cd spa-transactionapp
+cd Contact-List-react
 ```
 
 3. Install dependencies
