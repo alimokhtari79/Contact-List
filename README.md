@@ -6,8 +6,6 @@
       Transaction App - React.js
   </h1>
   
-https://user-images.githubusercontent.com/72548955/222735779-c7903ceb-a452-4070-8560-d42aef740ffd.mp4
-  
   ## ⚗️technologies
 - <img alt="html"  src="https://skillicons.dev/icons?i=html" width="20" height="20" align="center" /> HTML
 - <img alt="js"  src="https://skillicons.dev/icons?i=js" width="20" height="20" align="center" /> Java Scripts
