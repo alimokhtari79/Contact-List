@@ -8,10 +8,10 @@
   
   ## ⚗️technologies
 - <img alt="html"  src="https://skillicons.dev/icons?i=html" width="20" height="20" align="center" /> HTML
+- <img alt="css"  src="https://skillicons.dev/icons?i=css" width="20" height="20" align="center" /> CSS
 - <img alt="js"  src="https://skillicons.dev/icons?i=js" width="20" height="20" align="center" /> Java Scripts
 - <img alt="react"  src="https://skillicons.dev/icons?i=react" width="20" height="20" align="center" /> [React.js](https://reactjs.org/)
-- <img alt="Context API"  src="https://skillicons.dev/icons?i=react" width="20" height="20" align="center" /> Context API
-- <img alt="tailwind"  src="https://skillicons.dev/icons?i=tailwind" width="20" height="20" align="center" /> [Tailwind Css](https://tailwindcss.com/)
+
 
 
 ## 🚀 Demo
